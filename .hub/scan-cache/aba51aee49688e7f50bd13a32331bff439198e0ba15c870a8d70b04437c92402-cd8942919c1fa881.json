@@ -1,0 +1,53 @@
+{
+  "bundle_hash": "sha256:aba51aee49688e7f50bd13a32331bff439198e0ba15c870a8d70b04437c92402",
+  "scanner_version": "skills-guard-v6",
+  "source": "skills-sh/nextlevelbuilder/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max",
+  "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max",
+  "verdict": "safe",
+  "trust_level": "community",
+  "findings": [
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "data\\google-font-licenses.json",
+      "line": 0,
+      "match": "422KB",
+      "description": "file is 422KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "data\\google-fonts.csv",
+      "line": 0,
+      "match": "729KB",
+      "description": "file is 729KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "data\\phosphor-icons-upstream.json",
+      "line": 0,
+      "match": "804KB",
+      "description": "file is 804KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "too_many_files",
+      "severity": "medium",
+      "category": "structural",
+      "file": "(directory)",
+      "line": 0,
+      "match": "55 files",
+      "description": "skill has 55 files (limit: 50)"
+    }
+  ],
+  "rules": [
+    "oversized_file",
+    "too_many_files"
+  ],
+  "scanned_at": "2026-10-07T14:48:46.660287+00:00",
+  "summary": "ui-ux-pro-max: safe \u2014 4 finding(s) in structural",
+  "fresh": true
+}

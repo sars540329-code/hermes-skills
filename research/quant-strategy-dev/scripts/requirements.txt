@@ -1,0 +1,13 @@
+﻿# quant-strategy-dev 學員版需要的 Python 套件
+# 安裝：pip install -r requirements.txt
+#
+# ⛔ 雪鴞（snowyowl）要用裝它的那個環境（學員包是 Python 3.13），而且不在 PyPI 上 ——
+#    它是課程安裝包裡的 .whl，第一堂已經裝過就不用再裝。
+#    這支 requirements 請裝在「裝雪鴞的那個環境」裡，全部腳本就能用同一個 python 跑。
+
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+
+# 只有要產 Word 報告（選配）才需要：
+python-docx>=1.1

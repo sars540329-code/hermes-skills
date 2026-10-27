@@ -1,0 +1,37 @@
+/* 最小骨架樣式 —— 深空藍配色 */
+.mofi-chart {
+  background: #0a1222; border: 1px solid #143352; border-radius: 10px;
+  padding: 12px; margin: 16px 0;
+  font-family: 'Fira Code', 'Microsoft JhengHei', ui-monospace, monospace;
+  overflow: hidden;
+}
+
+/* ⛔ 坑⑧：高度必須寫死。
+   用 min-height 讓內容自己換行的話，滑鼠一移上去就從一行變兩行、
+   整張圖被往下推，游標跟著跳掉。 */
+.mofi-chart .tc-readout {
+  display: grid; grid-template-rows: 1fr 1fr;
+  height: 52px; overflow: hidden;
+  padding: 4px 10px; margin-bottom: 8px;
+  background: #06101d; border: 1px solid #143352; border-radius: 8px;
+  color: #cfe6ff; font-size: 13px; line-height: 1.4;
+}
+.mofi-chart .tc-ro-line {
+  display: flex; align-items: center; gap: 0 12px;
+  white-space: nowrap; overflow: hidden;
+}
+.mofi-chart .tc-canvas { width: 100%; }
+
+/* 窄畫面一行放不下就允許換行，但高度照樣寫死——不截斷，也不跳版 */
+@media (max-width: 1024px) {
+  .mofi-chart .tc-readout { height: 76px; font-size: 12px; align-content: center; }
+  .mofi-chart .tc-ro-line { flex-wrap: wrap; white-space: normal; gap: 0 9px; }
+}
+
+/* 全螢幕：整塊吃滿視窗，16:9 一眼看完 */
+.mofi-chart:fullscreen {
+  height: 100vh; width: 100vw; margin: 0; border: 0; border-radius: 0;
+  padding: 12px 16px; display: flex; flex-direction: column;
+}
+.mofi-chart:fullscreen .tc-readout { flex: none; }
+.mofi-chart:fullscreen .tc-canvas { flex: 1 1 auto; min-height: 0; }

@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "installed": {
+    "ui-ux-pro-max": {
+      "source": "skills.sh",
+      "identifier": "skills-sh/nextlevelbuilder/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:aba51aee49688e7f",
+      "install_path": "ui-ux-pro-max",
+      "files": [
+        "SKILL.md",
+        "data/app-interface.csv",
+        "data/catalog-summary.json",
+        "data/charts.csv",
+        "data/colors.csv",
+        "data/data-provenance.json",
+        "data/google-font-licenses.json",
+        "data/google-fonts.csv",
+        "data/icons.csv",
+        "data/landing.csv",
+        "data/motion.csv",
+        "data/phosphor-icons-upstream.json",
+        "data/products.csv",
+        "data/react-performance.csv",
+        "data/stacks/angular.csv",
+        "data/stacks/astro.csv",
+        "data/stacks/avalonia.csv",
+        "data/stacks/flutter.csv",
+        "data/stacks/html-tailwind.csv",
+        "data/stacks/javafx.csv",
+        "data/stacks/jetpack-compose.csv",
+        "data/stacks/laravel.csv",
+        "data/stacks/nextjs.csv",
+        "data/stacks/nuxt-ui.csv",
+        "data/stacks/nuxtjs.csv",
+        "data/stacks/react-native.csv",
+        "data/stacks/react.csv",
+        "data/stacks/shadcn.csv",
+        "data/stacks/svelte.csv",
+        "data/stacks/swiftui.csv",
+        "data/stacks/threejs.csv",
+        "data/stacks/uno.csv",
+        "data/stacks/uwp.csv",
+        "data/stacks/vue.csv",
+        "data/stacks/winui.csv",
+        "data/stacks/wpf.csv",
+        "data/styles.csv",
+        "data/typography.csv",
+        "data/ui-reasoning.csv",
+        "data/ux-guidelines.csv",
+        "references/pro-rules.md",
+        "references/quick-reference.md",
+        "scripts/core.py",
+        "scripts/design_system.py",
+        "scripts/reasoning_contract.py",
+        "scripts/search.py",
+        "scripts/tests/fixtures/catalogs/google-api.json",
+        "scripts/tests/fixtures/catalogs/google-catalog.json",
+        "scripts/tests/fixtures/catalogs/google-existing.csv",
+        "scripts/tests/fixtures/catalogs/google-metadata.json",
+        "scripts/tests/fixtures/catalogs/google-overrides.json",
+        "scripts/tests/fixtures/catalogs/icons-curated.csv",
+        "scripts/tests/fixtures/catalogs/phosphor-core.json",
+        "scripts/tests/fixtures/catalogs/phosphor-package.json",
+        "scripts/tests/fixtures/catalogs/phosphor-react-exports.json"
+      ],
+      "metadata": {
+        "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max",
+        "source_revision": "",
+        "detail_url": "https://skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max",
+        "repo_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:aba51aee49688e7f50bd13a32331bff439198e0ba15c870a8d70b04437c92402",
+        "scanner_version": "skills-guard-v6",
+        "source": "skills-sh/nextlevelbuilder/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max",
+        "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/.claude/skills/ui-ux-pro-max",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "data\\google-font-licenses.json",
+            "line": 0,
+            "match": "422KB",
+            "description": "file is 422KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "data\\google-fonts.csv",
+            "line": 0,
+            "match": "729KB",
+            "description": "file is 729KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "data\\phosphor-icons-upstream.json",
+            "line": 0,
+            "match": "804KB",
+            "description": "file is 804KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "too_many_files",
+            "severity": "medium",
+            "category": "structural",
+            "file": "(directory)",
+            "line": 0,
+            "match": "55 files",
+            "description": "skill has 55 files (limit: 50)"
+          }
+        ],
+        "rules": [
+          "oversized_file",
+          "too_many_files"
+        ],
+        "scanned_at": "2026-10-07T14:48:46.660287+00:00",
+        "summary": "ui-ux-pro-max: safe — 4 finding(s) in structural",
+        "fresh": true
+      },
+      "installed_at": "2026-10-07T14:48:46.720003+00:00",
+      "updated_at": "2026-10-07T14:48:46.720003+00:00"
+    }
+  }
+}

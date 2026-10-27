@@ -1,0 +1,4 @@
+interface:
+  display_name: "知識進 Obsidian"
+  short_description: "定期把你追蹤的網站報告，整理成可互相連結的 Obsidian 筆記"
+  default_prompt: "用 to-obsidian 幫我把網站的報告定期整理進 Obsidian。"
